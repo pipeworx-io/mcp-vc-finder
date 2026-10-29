@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.pipeworx-io/vc-finder",
   "title": "Vc Finder",
-  "description": "vc-finder — VC / angel investor graph (Bruce ask 2026-09-29; built",
-  "version": "0.1.0",
+  "description": "vc-finder — VC / angel investor graph (Bruce ask 2026-09-29; built private-first, PUBLIC since…",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/vc-finder",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-vc-finder",

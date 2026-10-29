@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-vc-finder",
-  "version": "0.1.0",
-  "description": "vc-finder — VC / angel investor graph (Bruce ask 2026-09-29; built",
+  "version": "0.2.0",
+  "description": "vc-finder — VC / angel investor graph (Bruce ask 2026-09-29; built private-first, PUBLIC since fleet #2663). Plan: docs/vc-graph-plan.md. Architecture, DDL, extraction and entity-resolution design: docs/vc-graph-architecture.md, sql/vc-finder-schema.sql, sql/vc-finder-queries.sql.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-vc-finder": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "vc-finder"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-vc-finder.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/vc-finder",
   "pipeworx": {
-    "sourceHash": "v1-ba40e6960affba8d26fa9f8fa4d974ef78d10dd64adac21e34998f2113035ccf",
-    "sourceCommit": "e24dc8ff6a0110675ba7e3fddac406cd755bed9b"
+    "mode": "gateway",
+    "slug": "vc-finder",
+    "gatewaySlug": "vc-finder",
+    "sourceHash": "v1-5a42e459382a986345768a091be00af33c66e85f5abc874117fc02b6a538a09f",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
