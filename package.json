@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-vc-finder",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "vc-finder — VC / angel investor graph (Bruce ask 2026-09-29; built private-first, PUBLIC since fleet #2663). Plan: docs/vc-graph-plan.md. Architecture, DDL, extraction and entity-resolution design: docs/vc-graph-architecture.md, sql/vc-finder-schema.sql, sql/vc-finder-queries.sql.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "vc-finder",
     "gatewaySlug": "vc-finder",
-    "sourceHash": "v1-5a42e459382a986345768a091be00af33c66e85f5abc874117fc02b6a538a09f",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-f0491318cd6c3943233a09ee54f62c0b637231bfa6295e22b1e4cf836c5289a6",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
